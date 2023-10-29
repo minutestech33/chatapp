@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900;1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e7e7e7;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d3d3d3;
+}
+.mainAccountContainer {
+    background-color: #04AA6D;
+    width: 100%;
+    height: 100vh;
+}
+.accountContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+     align-items: center;
+    gap: 20px;
+    width: 450px;
+}
+.accountLeftContainer img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    border: 2px solid #04AA6D;
+    object-fit: cover;
+}
+.accountRightContainer form input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    width: 100%;
+    border-radius: 5px;
+}
+.accountRightContainer form input[type="file"]:hover {
+    cursor: pointer;
+}
+.accountRightContainer form button {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #04AA6D;
+    color: white;
+}
+.accountRightContainer form button:hover {
+    cursor: pointer;
+}
+.accountRightContainer p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.messageMainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 5px;
+}
+.messageLeftContainer{
+    width: 20%;
+    height: 95vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.messageCenterContainer{
+    width: 60%;
+    height: 95vh;
+    background-color: #ecf2ff;
+    border-radius: 10px;
+    border: 1px solid #e0e4f0;
+}
+.messageRightContainer{
+    width: 20%;
+    height: 95vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logoContainer i {
+    font-size: 25px;
+    color: #04AA6D;
+}
+.logoContainer p {
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+.profileContainer {
+    background-color: #ecf2ff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e4f0;
+}
+.othersProfileContainer {
+    background-color: #ecf2ff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e4f0;
+}
+.profilePicture {
+    display: flex;
+    justify-content: center;
+}
+.profilePicture img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100px;
+    align-items: center;
+}
+.profileName {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgb(75, 75, 75);
+    text-align: center;
+}
+.profileTitle {
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgb(75, 75, 75);
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0.4px;
+}
+.activeDiactiveContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.activeDiactiveContainer p:first-child {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #04AA6D;
+}
+.activeDiactiveContainer p:last-child {
+    font-size: 12px;
+    color: rgb(75, 75, 75);
+}
+.activeConversionSection {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.activeConversionSection p:last-child {
+    background-color: #ecf2ff;
+    padding: 3px 7px;
+    border-radius: 100px;
+}
+.activePersionContainer {
+    width: 100%;
+    height: 48.5vh;
+    margin-top: 8px;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.activePersionSingleContainer img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.activePersionSingleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+.activePersionSingleContainer:hover {
+    background-color: #ecf2ff;
+    cursor: pointer;
+    border: 1px solid #e0e4f0;
+}
+.activePersionSingleLeft p {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+.activePersionSingleLeft {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.messegeNumber {
+    font-size: 11px;
+    padding: 2px 6px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 85);
+    color: white;
+    border-radius: 100px;
+}
+.filesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+    grid-gap: 10px;
+}
+.singleFileContainer {
+    border-radius: 3px;
+}
+.singleFileContainer i {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.singleFileContainer p {
+    font-size: 14px;
+    font-weight: bold;
+}
+.photosContainer {
+    background-color: #d9f8ed;
+    padding: 13px;
+}
+.photosContainer i, .photosContainer p {
+    color: #0a9b68;
+}
+.videosContainer {
+    background-color: #d9e9f8;
+    padding: 13px;
+}
+.videosContainer i, .videosContainer p {
+    color: #0c5da8;
+}
+.documentsContainer {
+    background-color: #f8d9f6;
+    padding: 13px;
+}
+.documentsContainer i, .documentsContainer p {
+    color: #a00e96;
+}
+.apksContainer {
+    background-color: #f8f3d9;
+    padding: 13px;
+}
+.apksContainer i, .apksContainer p {
+    color: #b89d16;
+}
+.logoutBtn {
+    margin-top: 10px;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 800;
+    color: rgb(63, 63, 63);
+    border-radius: 3px;
+    background-color: #ecf2ff;
+    border: 1px solid #e0e4f0;
+}
+.logoutBtn:hover {
+    cursor: pointer;
+    background-color: #04AA6D;
+    color: white;
+}
+.messageHeaderContainer {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid white;
+}
+.messageMiddleContainer {
+    height: 82%;
+    width: 100%;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.messageFooterContainer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-top: 1px solid white;
+}
+.messageHeaderLeftContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.messageHeaderLeftContainer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.messageHeaderContainer i {
+    padding: 8px 14px;
+    border-radius: 100px;
+    color: rgb(66, 66, 66);
+}
+.messageHeaderContainer i:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.messageFooterContainer i {
+    font-size: 20px;
+    color: rgb(49, 49, 49);
+}
+.messageFooterContainer form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.messageFooterContainer form input {
+    width: 93%;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 12px 15px;
+    outline: none;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.messageFooterContainer form button {
+    width: 7%;
+    border: none;
+    outline: none;
+    background-color: #04AA6D;
+    padding: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid #04AA6D;
+}
+.messageFooterContainer form button i {
+    color: white;
+}
+.messageFooterContainer i:hover, .messageFooterContainer form button:hover {
+    cursor: pointer;
+}
+.messageFooterContainer form input::placeholder {
+    font-size: 14px;
+}
+input[type="file"] {
+    display: none;
+}
+.selectToStart {
+    color: rgb(165, 165, 165);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 300px;
+}
+.msg {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    max-width: 60%;
+}
+.onlineStatus {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #04AA6D;
+}
+.offlineStatus {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #d80a2c;
+}
